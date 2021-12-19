@@ -1,0 +1,142 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, 
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Custom styles */
+
+*, 
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1000px;
+    margin: 0px auto;
+   
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+/* header */
+
+header{
+    background-color: #F96115;
+    padding: 25px 0px;
+    
+}
+.nav-bar a{
+    margin-right: 32px;
+    text-decoration: none;
+    color: white;
+   
+}
+.nav-bar li{
+    list-style: none;
+}
+/* Main */
+
+main{
+    background-color: #D4CEA7;
+}
+
+/* column-section */
+
+.column-section{
+    color: #D2CBA5;
+    line-height: 2.2;
+    padding: 50px 0px;
+
+}
+.col{
+    background-color: #005979;
+    width: 32%;
+    height: 600px;
+    padding: 20px 50px;
+    padding-bottom: 150px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+.col-2-3 li{ 
+    margin-top: 5px;
+}
+.col-3-3 li{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.col-3-3 li:before{
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url(check-circle-solid\ \(1\).svg);
+    vertical-align: middle;
+    margin-right: 10px;
+ }
+
+.column-section .flex{
+    justify-content: space-between;
+}  
+/* Article-section */
+
+.article-section {
+    padding-bottom: 50px;
+}
+.article-section dt{
+    font-size: 30px;
+    margin: 15px 0px; 
+    
+}
+.article-section dd{
+    font-size: 19px;
+    color: #6E6B54;
+}
+.space{
+    line-height: 1.5;
+}
+/* Footer */
+.footer{
+    background-color: #242C22;
+    padding: 38px 0px;
+}
